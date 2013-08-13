@@ -38,60 +38,178 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Agenda</h2>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
+      <ul>
+        <li>Introduction</li>
+        <li>eSpace Process</li>
+        <li>A Guide to Scrum</li>
+        <li>Case Study: Rwaq</li>
+        <li>Resources</li>
       </ul>
-      <p>Another list, but items fade as they build:</p>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>Introduction</h2>
+      <h3>Software Development Processes</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What is a Software Process?</h2>
+    </hgroup>
+    <article>
+      <p>A software development process, also known as a software development lifecycle, is a structure imposed on the development of a software product.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Engineering Software is Different</h2>
+    </hgroup>
+    <article>
       <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+        <li>Since 1951, there have been tremendous advances in hardware design, and there have been so many software disasters.</li>
+        <li>Ariane 5 Rocket Explosion (1996): Failed to achieve orbit due to an unhandled integer overflow exception!</li>
+        <li>Mars Climate Orbiter Crash (1999): Lost in space due to lack of conversion from English to metric units!</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>Engineering Software is Different</h2>
     </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+    <article>
+      <ul class="build fade">
+        <li>Why hasn't software engineering as successful as hardware engineering?</li>
+        <li>The reasons have to do with differences in nature of the two media and subsequent cultures that have grown up around them.</li>
+      </ul>
     </article>
-  </slide>
-
-  <slide class="segue dark nobackground">
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
   </slide>
 
   <slide class="segue dark quote nobackground">
     <article class="flexbox vleft auto-fadein">
       <q>
-        This is an example of quote text.
+        If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.
       </q>
       <div class="author">
-        Name
+        Weinberg's Second Law
       </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Product Lifetimes</h2>
+      <h3>Independent Products vs. Continuous Improvement</h3>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Unlike hardware, software is expected to grow and evolve over time.</li>
+        <li>Customers expect a hardware product to be bug-free. If it's not working properly, it should be replaced.</li>
+        <li>Customers are considerably more forgiving for software.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Product Lifetimes</h2>
+      <h3>Independent Products vs. Continuous Improvement</h3>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li><span class="gray4">Legacy Code</span>: Continues to be used because it meets customers’ needs.</li>
+        <li>60% of software maintenance costs are for adding new functionality to legacy software. It's successful!</li>
+        <li><span class="gray4">Beautiful Code</span>: Long-lasting code that is easy to evolve.</li>
+        <li>Worst case is unexpectedly short-lived code that is soon discarded because it doesn’t meet customers’ needs.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Development Processes</h2>
+      <h3>Plan-and-Document vs. Agile</h3>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Software processes initially followed hardware processes. Measure twice, cut once!</li>
+        <li><span class="gray4">Waterfall Model</span>: A sequential process through phases of analysis, design, implementation, testing, deployment and maintenance.</li>
+        <li>Works well with well-defined tasks like NASA space flights, but it runs into trouble when customers change their minds.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Development Processes</h2>
+      <h3>Plan-and-Document vs. Agile</h3>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li><span class="gray4">Spiral Model</span>: Iterates through all the development phases to produce prototypes with iterations of 6 to 24 months long.</li>
+        <li>All <span class="gray4">Plan-and-Document</span> models rely on careful planning and thorough documentation, and measure progress against a plan.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Development Processes</h2>
+      <h3>Plan-and-Document vs. Agile</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>In February 2001, 17 software developers met to find a common ground for lightweight development methods and published the <span class="gray4">Agile Manifesto</span></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/agilemanifesto2.png)">
+    <footer class="source white">www.agilemanifesto.org</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Development Processes</h2>
+      <h3>Plan-and-Document vs. Agile</h3>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li><span class="gray4">Agile Model</span>: Continuous refinement of a working but incomplete prototype until the customer is happy.</li>
+        <li>Documentation is primarily through <span class="gray4">user stories</span>, and progress is measured by recording <span class="gray4">velocity</span>.</li>
+        <li>Agile methods include Extreme Programming, Scrum, Kanban and Lean software development.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>eSpace Process</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>eSpace Process Version 2.0</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="eSpace-Process-2.0.pdf"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>eSpace Process Version 3.0</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="eSpace-Process-3.0.pdf"></iframe>
     </article>
   </slide>
 
