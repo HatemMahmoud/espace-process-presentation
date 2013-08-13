@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'eSpace Process',
-    subtitle: 'A Scrum Software Process',
+    subtitle: 'A Guide to eSpace Software Process',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -23,8 +23,8 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Hatem Mahmoud',
-    company: 'Lead Developer',
+    name: 'Hatem Mahmoud<br>Lead Developer, eSpace',
+    // company: 'Lead Developer<br>eSpace',
     // gplus: 'http://plus.google.com/1234567890',
     twitter: '@HatemMahmoud',
     www: 'http://ExpressionLab.com',
